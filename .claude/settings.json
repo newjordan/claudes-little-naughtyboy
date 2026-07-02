@@ -1,0 +1,56 @@
+{
+  "hooks": {
+    "MessageDisplay": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "$script = Join-Path $env:CLAUDE_PROJECT_DIR '.claude\\hooks\\ah_ah_ah_popup.py'; if (Get-Command python -ErrorAction SilentlyContinue) { & python $script } elseif (Get-Command py -ErrorAction SilentlyContinue) { & py -3 $script }",
+            "async": true,
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "$script = Join-Path $env:CLAUDE_PROJECT_DIR '.claude\\hooks\\ah_ah_ah_popup.py'; if (Get-Command python -ErrorAction SilentlyContinue) { & python $script } elseif (Get-Command py -ErrorAction SilentlyContinue) { & py -3 $script }",
+            "async": true,
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "$script = Join-Path $env:CLAUDE_PROJECT_DIR '.claude\\hooks\\ah_ah_ah_popup.py'; if (Get-Command python -ErrorAction SilentlyContinue) { & python $script } elseif (Get-Command py -ErrorAction SilentlyContinue) { & py -3 $script }",
+            "async": true,
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "StopFailure": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "$script = Join-Path $env:CLAUDE_PROJECT_DIR '.claude\\hooks\\ah_ah_ah_popup.py'; if (Get-Command python -ErrorAction SilentlyContinue) { & python $script } elseif (Get-Command py -ErrorAction SilentlyContinue) { & py -3 $script }",
+            "async": true,
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
