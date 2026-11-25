@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claudes-little-naughtyboy"
+version = "0.1.0"
+description = "Claude Code hook that opens a lockout popup when an LLM-research cutoff or reroute mentions Opus 4."
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["claude-code", "hooks"]
+
+[project.optional-dependencies]
+images = ["pillow>=10"]
+dev = ["pytest>=8", "ruff>=0.6", "pillow>=10"]
+
+[tool.setuptools]
+packages = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
