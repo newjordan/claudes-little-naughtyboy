@@ -5,10 +5,10 @@
         "hooks": [
           {
             "type": "command",
-            "shell": "powershell",
-            "command": "$script = Join-Path $env:CLAUDE_PROJECT_DIR '.claude\\hooks\\ah_ah_ah_popup.py'; if (Get-Command python -ErrorAction SilentlyContinue) { & python $script } elseif (Get-Command py -ErrorAction SilentlyContinue) { & py -3 $script }",
+            "shell": "bash",
+            "command": "script=\"${CLAUDE_PROJECT_DIR}/.claude/hooks/ah_ah_ah_popup.py\"; if command -v python3 >/dev/null 2>&1; then python3 \"$script\"; elif command -v python >/dev/null 2>&1; then python \"$script\"; elif command -v py >/dev/null 2>&1; then py -3 \"$script\"; fi",
             "async": true,
-            "timeout": 5
+            "timeout": 10
           }
         ]
       }
@@ -18,10 +18,10 @@
         "hooks": [
           {
             "type": "command",
-            "shell": "powershell",
-            "command": "$script = Join-Path $env:CLAUDE_PROJECT_DIR '.claude\\hooks\\ah_ah_ah_popup.py'; if (Get-Command python -ErrorAction SilentlyContinue) { & python $script } elseif (Get-Command py -ErrorAction SilentlyContinue) { & py -3 $script }",
+            "shell": "bash",
+            "command": "script=\"${CLAUDE_PROJECT_DIR}/.claude/hooks/ah_ah_ah_popup.py\"; if command -v python3 >/dev/null 2>&1; then python3 \"$script\"; elif command -v python >/dev/null 2>&1; then python \"$script\"; elif command -v py >/dev/null 2>&1; then py -3 \"$script\"; fi",
             "async": true,
-            "timeout": 5
+            "timeout": 10
           }
         ]
       }
@@ -31,10 +31,10 @@
         "hooks": [
           {
             "type": "command",
-            "shell": "powershell",
-            "command": "$script = Join-Path $env:CLAUDE_PROJECT_DIR '.claude\\hooks\\ah_ah_ah_popup.py'; if (Get-Command python -ErrorAction SilentlyContinue) { & python $script } elseif (Get-Command py -ErrorAction SilentlyContinue) { & py -3 $script }",
+            "shell": "bash",
+            "command": "script=\"${CLAUDE_PROJECT_DIR}/.claude/hooks/ah_ah_ah_popup.py\"; if command -v python3 >/dev/null 2>&1; then python3 \"$script\"; elif command -v python >/dev/null 2>&1; then python \"$script\"; elif command -v py >/dev/null 2>&1; then py -3 \"$script\"; fi",
             "async": true,
-            "timeout": 5
+            "timeout": 10
           }
         ]
       }
@@ -44,10 +44,10 @@
         "hooks": [
           {
             "type": "command",
-            "shell": "powershell",
-            "command": "$script = Join-Path $env:CLAUDE_PROJECT_DIR '.claude\\hooks\\ah_ah_ah_popup.py'; if (Get-Command python -ErrorAction SilentlyContinue) { & python $script } elseif (Get-Command py -ErrorAction SilentlyContinue) { & py -3 $script }",
+            "shell": "bash",
+            "command": "script=\"${CLAUDE_PROJECT_DIR}/.claude/hooks/ah_ah_ah_popup.py\"; if command -v python3 >/dev/null 2>&1; then python3 \"$script\"; elif command -v python >/dev/null 2>&1; then python \"$script\"; elif command -v py >/dev/null 2>&1; then py -3 \"$script\"; fi",
             "async": true,
-            "timeout": 5
+            "timeout": 10
           }
         ]
       }
